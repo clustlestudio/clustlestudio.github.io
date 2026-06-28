@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clustlestudio.github.io/sitemap.xml
