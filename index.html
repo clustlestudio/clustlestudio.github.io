@@ -3,104 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy — StreakFast</title>
+    <title>StreakFast — Private Intermittent Fasting Tracker | Clustle Studio</title>
+    <meta name="description" content="StreakFast is a privacy-first intermittent fasting tracker. See your fasting stage in real time, build your streak, and keep every log on your own device — no account, no cloud, no ads. Free on Google Play.">
+    <link rel="canonical" href="https://clustlestudio.github.io/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="StreakFast — Private Intermittent Fasting Tracker">
+    <meta property="og:description" content="See your fasting stage in real time and build your streak. No account, no cloud, no ads — your data stays on your device. Free on Google Play.">
+    <meta property="og:url" content="https://clustlestudio.github.io/">
+    <meta property="og:site_name" content="Clustle Studio">
+
     <style>
+        :root { --gold: #d4a017; --ink: #222; }
+        * { box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            max-width: 720px;
-            margin: 40px auto;
-            padding: 0 20px;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
             line-height: 1.7;
-            color: #222;
+            color: var(--ink);
             background: #fff;
         }
-        h1 { font-size: 28px; border-bottom: 2px solid #eee; padding-bottom: 12px; }
-        h2 { font-size: 20px; margin-top: 32px; }
-        h3 { font-size: 17px; margin-top: 20px; }
-        ul { padding-left: 20px; }
-        li { margin: 6px 0; }
-        .updated { color: #888; font-size: 14px; }
+        nav.crumb { font-size: 14px; color: #888; margin: 22px 0 0; }
+        nav.crumb a { color: #888; text-decoration: none; }
+
+        .hero { text-align: center; padding: 48px 0 8px; }
+        .hero h1 { font-size: 40px; line-height: 1.15; margin: 0 0 14px; letter-spacing: -0.5px; }
+        .hero .tag { font-size: 20px; color: #444; margin: 0 auto 10px; max-width: 560px; }
+        .hero .sub { font-size: 16px; color: #777; margin: 0 auto 28px; max-width: 520px; }
+
+        .cta {
+            display: inline-block; background: var(--gold); color: #fff; text-decoration: none;
+            font-weight: 700; font-size: 17px; padding: 15px 32px; border-radius: 10px;
+        }
+        .cta:hover { background: #bd8f14; }
+        .cta-note { display: block; font-size: 13px; color: #999; margin-top: 10px; }
+
+        .features { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 48px 0; }
+        .feature { background: #fafafa; border: 1px solid #eee; border-radius: 10px; padding: 20px 22px; }
+        .feature h3 { margin: 0 0 6px; font-size: 17px; }
+        .feature p { margin: 0; font-size: 15px; color: #555; }
+        @media (max-width: 560px) { .features { grid-template-columns: 1fr; } .hero h1 { font-size: 32px; } }
+
+        .privacy-band {
+            background: #fff8e6; border: 1px solid #f0e0b0; border-radius: 10px;
+            padding: 22px 26px; margin: 40px 0; font-size: 16px; color: #333;
+        }
+        .privacy-band strong { color: var(--ink); }
+
+        h2.section { font-size: 22px; margin: 48px 0 8px; }
+        .lead { font-size: 16px; color: #555; margin-top: 0; }
+        .guide-list { columns: 2; column-gap: 28px; font-size: 15px; padding: 0; list-style: none; margin: 18px 0; }
+        .guide-list li { margin: 0 0 9px; break-inside: avoid; }
+        .guide-list a { color: #0366d6; text-decoration: none; }
+        .guide-list a:hover { text-decoration: underline; }
+        @media (max-width: 560px) { .guide-list { columns: 1; } }
+        .all-guides { font-size: 15px; }
+
+        footer { margin-top: 56px; border-top: 1px solid #eee; padding-top: 22px; font-size: 14px; color: #666; }
+        footer a { color: #666; }
     </style>
+
+    <!-- Structured data: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "StreakFast",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Android",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "publisher": { "@type": "Organization", "name": "Clustle Studio" },
+      "url": "https://play.google.com/store/apps/details?id=com.clustlestudio.streakfast",
+      "description": "A privacy-first intermittent fasting tracker that shows your fasting stage in real time and is built around your streak. No account, no cloud, no ads — your data stays on your device."
+    }
+    </script>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: July 5, 2026</p>
+    <nav class="crumb"><a href="/">Clustle Studio</a></nav>
 
-    <p>This Privacy Policy applies to the <strong>StreakFast</strong> mobile application (the "App"), operated by <strong>Clustle Studio</strong> ("we," "us," or "our").</p>
+    <div class="hero">
+        <h1>StreakFast</h1>
+        <p class="tag">The private intermittent fasting tracker that shows your fasting stage in real time.</p>
+        <p class="sub">Build your streak, watch your body move through each fasting stage hour by hour, and keep every log on your own phone — no account, no cloud, no ads.</p>
+        <a class="cta" href="https://play.google.com/store/apps/details?id=com.clustlestudio.streakfast">Download free on Google Play &rarr;</a>
+        <span class="cta-note">Free to use · Optional Pro · Android</span>
+    </div>
 
-    <p><strong>In short:</strong> StreakFast is built to be private. It has no account, no cloud, no ads, and no analytics or trackers. Everything you log stays on your own device.</p>
+    <div class="features">
+        <div class="feature">
+            <h3>Real-time fasting stages</h3>
+            <p>See exactly where you are — from digestion to fat-burning to autophagy — as the hours tick by, not just a plain timer.</p>
+        </div>
+        <div class="feature">
+            <h3>Built around your streak</h3>
+            <p>The whole app is designed to keep your streak alive, so fasting becomes a habit you actually stick with.</p>
+        </div>
+        <div class="feature">
+            <h3>Track what matters</h3>
+            <p>Fasting timer, water intake, weight logs and clear charts — everything in one simple, focused place.</p>
+        </div>
+        <div class="feature">
+            <h3>Yours, on your device</h3>
+            <p>No sign-up and nothing uploaded. Your data lives on your phone and never leaves it unless you export it yourself.</p>
+        </div>
+    </div>
 
-    <h2>Information We Collect</h2>
+    <div class="privacy-band">
+        <strong>Private by design.</strong> StreakFast has no account, no cloud, no ads, and no trackers or analytics of any kind. There is no server to breach because everything stays on your device. Read our full <a href="/privacy-policy.html">Privacy Policy</a>.
+    </div>
 
-    <h3>Information You Provide</h3>
-    <ul>
-        <li>Fasting records, water intake, weight logs, and your optional profile (age, gender, height, target weight, calculated BMI) that you enter while using the App</li>
-        <li>Your email content, only if you choose to contact us by email</li>
+    <h2 class="section">Learn intermittent fasting</h2>
+    <p class="lead">Honest, practical guides to help you fast well — free to read, no email required.</p>
+    <ul class="guide-list">
+        <li><a href="/guide/how-to-start-16-8-intermittent-fasting.html">How to Start 16:8 Fasting</a></li>
+        <li><a href="/guide/intermittent-fasting-stages.html">Fasting Stages, Hour by Hour</a></li>
+        <li><a href="/guide/intermittent-fasting-schedules.html">16:8 vs 18:6 vs OMAD vs 5:2</a></li>
+        <li><a href="/guide/what-breaks-a-fast.html">What Breaks a Fast?</a></li>
+        <li><a href="/guide/how-to-break-a-fast.html">How to Break a Fast Safely</a></li>
+        <li><a href="/guide/intermittent-fasting-for-women.html">Fasting for Women</a></li>
+        <li><a href="/guide/not-losing-weight-intermittent-fasting.html">Not Losing Weight?</a></li>
+        <li><a href="/guide/coffee-and-intermittent-fasting.html">Coffee &amp; Fasting</a></li>
+        <li><a href="/guide/autophagy-and-fasting.html">Autophagy &amp; Fasting</a></li>
+        <li><a href="/guide/how-to-stop-feeling-hungry-while-fasting.html">Stop Feeling Hungry</a></li>
     </ul>
+    <p class="all-guides"><a href="/guide/">Browse all 23 fasting guides &rarr;</a></p>
 
-    <h3>Automatically Collected Information</h3>
-    <p><strong>None.</strong> StreakFast has no analytics, trackers, cookies, or advertising SDKs, and no backend server. We do not automatically collect your device identifiers, advertising ID, IP address, usage or interaction data, or your location.</p>
-
-    <p>We do <strong>not</strong> collect your name, address, precise location, advertising ID, or other personally identifiable information.</p>
-
-    <h2>How We Use Your Information</h2>
-    <p>The data you enter is used solely to provide the App's features on your device — the fasting timer, records, streaks, charts, and reminders. We use it for nothing else, and we never see it.</p>
-
-    <p>We do <strong>not</strong>:</p>
-    <ul>
-        <li>Sell, rent, or share your data with third parties</li>
-        <li>Use your data for advertising or run any ad networks</li>
-        <li>Send you marketing emails (we do not collect your email or any contact information)</li>
-        <li>Run analytics or collect usage data of any kind</li>
-    </ul>
-
-    <h2>Data Storage</h2>
-    <p>All your data — including fasting records, weight data, and other information — is stored <strong>locally on your device only</strong>. We have no servers and do not upload your personal data anywhere. It never leaves your phone unless you choose to export or share it yourself.</p>
-    <p>We run no analytics and collect no usage data.</p>
-
-    <h2>Subscriptions</h2>
-    <p>Optional StreakFast Pro subscriptions are purchased and managed entirely through Google Play. Payment is processed by Google; the App never receives or stores your payment details. Google's handling of purchase and payment data is governed by Google's own Privacy Policy. You can view, manage, or cancel your subscription at any time in the Google Play Store.</p>
-
-    <h2>Third-Party Services</h2>
-    <ul>
-        <li><strong>Google Play Billing:</strong> to process optional subscription payments. Google handles payment information under its own Privacy Policy.</li>
-        <li><strong>Google Play:</strong> for app distribution and updates.</li>
-    </ul>
-    <p>We do not embed any analytics, advertising, or tracking services.</p>
-
-    <h2>Permissions</h2>
-    <ul>
-        <li><strong>Notifications:</strong> to show local fasting-stage and reminder notifications on your device. Nothing is sent anywhere.</li>
-        <li><strong>Run at startup:</strong> to re-schedule your local reminders after the device restarts.</li>
-        <li><strong>Billing (Google Play):</strong> to offer optional Pro subscriptions.</li>
-    </ul>
-    <p>The App does not request location, storage/files, camera, microphone, contacts, or media permissions.</p>
-
-    <h2>Data Retention</h2>
-    <p>Your data is kept locally on your device until you delete it. It is not stored on any server. Uninstalling the App, or using "Delete My Data" in Settings, removes all locally stored data.</p>
-
-    <h2>Your Rights (GDPR / CCPA / CPRA)</h2>
-    <p>Because we do not collect, store, sell, or share your personal data, the core data-subject rights — access, correction, deletion, and opting out of the sale or sharing of personal information — are fully satisfied by the on-device controls below. We do not sell or share personal information, and we do not use your data for targeted advertising.</p>
-
-    <h2>Your Control Over Your Data</h2>
-    <ul>
-        <li>Edit or delete individual fasting records inside the App</li>
-        <li>Use "Delete My Data" in Settings to erase all records, weight logs, and profile data from your device</li>
-        <li>Uninstall the App to remove all of its data — see our <a href="/data-deletion.html">Data Deletion page</a> for details</li>
-    </ul>
-    <p>Since we hold no server-side data about you, there is nothing on our end to request or delete.</p>
-
-    <h2>Children's Privacy</h2>
-    <p>This App is not directed to children under the age of 13. We do not knowingly collect personal information from children.</p>
-
-    <h2>Security</h2>
-    <p>Your data is stored locally on your device and protected by your device's own security. Because we operate no servers and transmit no personal data, your information is not exposed to server-side breaches.</p>
-
-    <h2>Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, contact us at:</p>
-    <p>Email: <a href="mailto:clustlestudio@gmail.com">clustlestudio@gmail.com</a></p>
-
-    <h2>Changes to This Privacy Policy</h2>
-    <p>We may update this Privacy Policy from time to time. If we make material changes, we will post the updated policy here with a new effective date.</p>
+    <footer>
+        <p><strong>StreakFast</strong> is made by <strong>Clustle Studio</strong> — a privacy-first intermittent fasting tracker built around your streak, with no account and no cloud.</p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.clustlestudio.streakfast">Get it on Google Play</a> &middot; <a href="/guide/">All guides</a> &middot; <a href="/privacy-policy.html">Privacy Policy</a> &middot; <a href="mailto:clustlestudio@gmail.com">clustlestudio@gmail.com</a></p>
+    </footer>
 </body>
 </html>
